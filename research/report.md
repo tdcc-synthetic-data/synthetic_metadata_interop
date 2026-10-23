@@ -5,13 +5,15 @@ Research and development: Paul Boon & Alessandra Polimeno
 Date: 20/10/2026
 
 ## Table of Contents
-- [Task description](#anchor)
-- [Phase 1: Metasyn and Dataverse](#anchor)
-- [Phase 2: Solutions for Synthetic Data Creation](#anchor)
-- [Phase 3: Demo Implementation](#anchor)
+- [Task description](#anchor1)
+- [Phase 1: Metasyn and Dataverse](#anchor2)
+- [Phase 2: Solutions for Synthetic Data Creation](#anchor4)
+- [Phase 3: Demo Implementation](#anchor5)
+- [Summary](#anchor6)
+- [AI Statement](#anchor7)
 
 
-## <span id="anchor"></span>Task description
+## <span id="anchor1"></span>Task description
 
 This report summarizes the work done by DANS in the [TDCC-SSH Project
 Synthetic Data: Leveraging the potential of sensitive data in
@@ -43,7 +45,7 @@ itself. The second phase took these findings and proposes potential
 solutions that allow depositors to create a synthetic dataset without
 the need to adapt or create new Dataverse functionalities. In the third phase a demo was developed that showcases a graphical user interface that allows users to create synthetic data from the dataset landing page in Dataverse.   
 
-## <span id="anchor"></span>Phase 1: Metasyn and Dataverse
+## <span id="anchor2"></span>Phase 1: Metasyn and Dataverse
 
 ### <span id="anchor"></span>Metasyn description
 
@@ -73,7 +75,7 @@ dataset.
 Users can create synthetic data with Metasyn with a Python script or
 notebook. Both the GMF and synthetic data file can be saved for reuse.
 
-### <span id="anchor"></span>Dataverse ingest details
+### <span id="anchor3"></span>Dataverse ingest details
 
 The biggest challenge for creating synthetic datasets from the data
 currently in DANS is that the data files that are most interesting to
@@ -109,14 +111,14 @@ Due to these issues, we decided it was not within scope of the current
 project to follow the route of extending the Dataverse ingest function.
 The next section describes the alternative we propose instead.
 
-## <span id="anchor"></span>Phase 2: Dataverse External Tool Functionality and a Metasyn API
+## <span id="anchor4"></span>Phase 2: Dataverse External Tool Functionality and a Metasyn API
 
 This phase of the task explores how we can use the External Tools
 functionality within Dataverse to provide the generation of synthetic
 data of a tabular file. It also includes a prototype for a locally run
 Metasyn API that can be called as external tool.
 
-### <span id="anchor-1"></span>DV External Tools
+### <span id="anchor"></span>DV External Tools
 
 The Dataverse [External
 Tools](https://guides.dataverse.org/en/latest/api/external-tools.html)
@@ -198,7 +200,7 @@ development work on the API, for instance by making it more secure so
 that it can be openly accessible. Since the input data would be openly
 accessible, the requirements should however be less complex.
 
-## <span id="anchor"></span>Phase 3: Integrating the Metasyn API into Dataverse
+## <span id="anchor5"></span>Phase 3: Integrating the Metasyn API into Dataverse
 The goal of this phase is to demonstrate a possible integration of the Metasyn API we created in the previous phase into Dataverse.  
 
 The additions include: 
@@ -226,7 +228,7 @@ You can use the demo tool on the [SSH test instance](https://test.ssh.datastatio
 
 
 
-## <span id="anchor-2"></span>Summary
+## <span id="anchor6"></span>Summary
 
 - The goal of this task was to explore how Metasyn, a tool for synthetic
   data generation, can be integrated into the DANS Data Station SSH.
@@ -237,6 +239,6 @@ You can use the demo tool on the [SSH test instance](https://test.ssh.datastatio
 - It can be used on .tab files to create a GMF file and add it to the dataset. 
 - It can also be used on the GMF to create and download a synthetic dataset. 
 
-## <span id="anchor-2"></span>AI Statement
+## <span id="anchor7"></span>AI Statement
 
 No AI was used in writing this report.
