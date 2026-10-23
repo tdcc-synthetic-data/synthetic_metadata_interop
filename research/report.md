@@ -4,6 +4,13 @@ Author: Alessandra Polimeno
 Research and development: Paul Boon & Alessandra Polimeno  
 Date: 20/10/2026
 
+## Table of Contents
+- [Task description](#anchor)
+- [Phase 1: Metasyn and Dataverse](#anchor)
+- [Phase 2: Solutions for Synthetic Data Creation](#anchor)
+- [Phase 3: Demo Implementation](#anchor)
+
+
 ## <span id="anchor"></span>Task description
 
 This report summarizes the work done by DANS in the [TDCC-SSH Project
